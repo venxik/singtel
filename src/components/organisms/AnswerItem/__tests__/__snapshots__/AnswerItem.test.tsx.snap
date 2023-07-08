@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnswerItem match snapshot 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderColor": "#000",
+      "borderRadius": 6,
+      "borderWidth": 1,
+      "height": 60,
+      "justifyContent": "center",
+      "margin": 4,
+      "opacity": 1,
+      "width": 60,
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#000",
+        },
+        [
+          {
+            "fontSize": 20,
+            "textAlign": "center",
+          },
+          {
+            "fontFamily": "comic",
+          },
+        ],
+      ]
+    }
+    testID="answer-item-text"
+  >
+    test
+  </Text>
+</View>
+`;
+
+exports[`StyledText match snapshot 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "borderColor": "#000",
+      "borderRadius": 6,
+      "borderWidth": 1,
+      "height": 60,
+      "justifyContent": "center",
+      "margin": 4,
+      "opacity": 1,
+      "width": 60,
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#000",
+        },
+        [
+          {
+            "fontSize": 20,
+            "textAlign": "center",
+          },
+          {
+            "fontFamily": "comic",
+          },
+        ],
+      ]
+    }
+    testID="answer-item-text"
+  >
+    test
+  </Text>
+</View>
+`;

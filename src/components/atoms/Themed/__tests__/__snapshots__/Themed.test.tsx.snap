@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Themed test Text match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#000",
+      },
+      undefined,
+    ]
+  }
+>
+  Snapshot test!
+</Text>
+`;
+
+exports[`Themed test View match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#fff",
+      },
+      undefined,
+    ]
+  }
+>
+  Snapshot test!
+</View>
+`;

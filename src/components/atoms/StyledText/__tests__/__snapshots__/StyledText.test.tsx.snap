@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledText match snapshot 1`] = `
+<Text
+  style={
+    [
+      {
+        "color": "#000",
+      },
+      [
+        undefined,
+        {
+          "fontFamily": "comic",
+        },
+      ],
+    ]
+  }
+>
+  Snapshot test!
+</Text>
+`;

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeaderboardItem match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#fff",
+      },
+      [
+        {
+          "borderColor": "#000",
+          "borderRadius": 6,
+          "borderWidth": 1,
+          "height": 60,
+          "justifyContent": "center",
+          "width": "100%",
+        },
+        undefined,
+      ],
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#000",
+        },
+        [
+          {
+            "fontSize": 20,
+            "marginLeft": 20,
+          },
+          {
+            "fontFamily": "comic",
+          },
+        ],
+      ]
+    }
+    testID="leaderboard-item-text"
+  >
+    test
+  </Text>
+</View>
+`;
