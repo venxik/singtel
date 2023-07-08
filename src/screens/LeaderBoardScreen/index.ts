@@ -1,3 +1,3 @@
-import LeaderBoardScreen from './LeaderBoardScreen';
+import LeaderboardScreen from './LeaderboardScreen';
 
-export { LeaderBoardScreen };
+export { LeaderboardScreen };

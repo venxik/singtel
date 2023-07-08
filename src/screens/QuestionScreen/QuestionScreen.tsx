@@ -104,7 +104,7 @@ const QuestionScreen = () => {
       dispatch(addScoreToLeaderboard(currentScore));
       dispatch(resetCurrentScore());
       dispatch(resetQuestionTracker());
-      replace('LeaderBoardScreen');
+      replace('LeaderboardScreen');
       return;
     }
     replace('QuestionScreen');
@@ -131,6 +131,7 @@ const QuestionScreen = () => {
         <View style={styles.answerContainer}>
           {answer?.map((item, answerIndex) => (
             <AnswerItem
+              testID={`answer-item`}
               key={answerIndex}
               text={item.word}
               disabled={item.word === ''}
@@ -144,6 +145,7 @@ const QuestionScreen = () => {
         <View style={styles.questionContainer}>
           {question?.map((item, questionIndex) => (
             <QuestionItem
+              testID={`question-item-${item.word}`}
               key={questionIndex}
               isSelected={item.isSelected}
               text={item.word}

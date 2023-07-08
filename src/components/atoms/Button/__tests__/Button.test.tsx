@@ -2,27 +2,26 @@ import React from 'react';
 import { renderWithProviders } from '../../../../__mocks__';
 import Button from '../Button';
 import { ComicText } from '../../StyledText';
-import { fireEvent } from '@testing-library/react-native';
+import { fireEvent, screen } from '@testing-library/react-native';
 
 describe('Button', () => {
   it(`match snapshot`, () => {
-    const tree = renderWithProviders(
+    renderWithProviders(
       <Button>
         <ComicText>Test</ComicText>
       </Button>
-    ).toJSON();
-
-    expect(tree).toMatchSnapshot();
+    );
+    expect(screen.toJSON()).toMatchSnapshot();
   });
 
   it(`can be pressed and functional`, () => {
     let number = 1;
-    const { getByTestId } = renderWithProviders(
+    renderWithProviders(
       <Button testID="button" onPress={() => (number += 1)}>
         <ComicText>Test</ComicText>
       </Button>
     );
-    fireEvent.press(getByTestId('button'));
+    fireEvent.press(screen.getByTestId('button'));
     expect(number).toBe(2);
   });
 });

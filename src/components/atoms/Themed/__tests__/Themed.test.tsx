@@ -1,21 +1,20 @@
 import React from 'react';
 import { Text, View } from '../Themed';
 import { renderWithProviders } from '../../../../__mocks__';
+import { screen } from '@testing-library/react-native';
 
 describe(`Themed`, () => {
   describe('Text', () => {
     it(`match snapshot`, () => {
-      const tree = renderWithProviders(<Text>Snapshot test!</Text>).toJSON();
-
-      expect(tree).toMatchSnapshot();
+      renderWithProviders(<Text>Snapshot test!</Text>);
+      expect(screen.toJSON()).toMatchSnapshot();
     });
   });
 
   describe('View', () => {
     it(`match snapshot`, () => {
-      const tree = renderWithProviders(<View>Snapshot test!</View>).toJSON();
-
-      expect(tree).toMatchSnapshot();
+      renderWithProviders(<View>Snapshot test!</View>);
+      expect(screen.toJSON()).toMatchSnapshot();
     });
   });
 });

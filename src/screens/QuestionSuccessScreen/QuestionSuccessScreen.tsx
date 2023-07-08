@@ -32,7 +32,7 @@ const QuestionSuccessScreen = () => {
       dispatch(addScoreToLeaderboard(currentScore));
       dispatch(resetCurrentScore());
       dispatch(resetQuestionTracker());
-      replace('LeaderBoardScreen');
+      replace('LeaderboardScreen');
       return;
     }
     replace('QuestionScreen');
@@ -41,7 +41,8 @@ const QuestionSuccessScreen = () => {
   return (
     <View style={styles.container}>
       <ComicText
-        style={styles.title}>{`Correct! Congratulations You Earn ${points} Points`}</ComicText>
+        style={styles.title}
+        testID="title-text">{`Correct! Congratulations You Earn ${points} Points`}</ComicText>
       <Button testID={`button-next`} style={styles.button} onPress={onPressNext}>
         <ComicText>Next</ComicText>
       </Button>

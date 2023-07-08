@@ -1,34 +1,30 @@
 import React from 'react';
 import { renderWithProviders } from '../../../../__mocks__';
-import { fireEvent } from '@testing-library/react-native';
+import { fireEvent, screen } from '@testing-library/react-native';
 import Category from '../Category';
 
 describe('Category', () => {
   it(`match snapshot`, () => {
-    const tree = renderWithProviders(<Category text="test" isSelected />).toJSON();
-    expect(tree).toMatchSnapshot();
+    renderWithProviders(<Category text="test" isSelected />);
+    expect(screen.toJSON()).toMatchSnapshot();
   });
 
   it(`can be pressed and functional`, () => {
     let number = 1;
-    const { getByTestId } = renderWithProviders(
+    renderWithProviders(
       <Category testID="category-item" text="test" onPress={() => (number += 1)} isSelected />
     );
-    fireEvent.press(getByTestId('category-item'));
+    fireEvent.press(screen.getByTestId('category-item'));
     expect(number).toBe(2);
   });
 
   it(`can have correct text`, () => {
-    const { getByTestId } = renderWithProviders(
-      <Category testID="category-item" text="test" isSelected />
-    );
-    expect(getByTestId('category-text').props.children).toEqual('test');
+    renderWithProviders(<Category testID="category-item" text="test" isSelected />);
+    expect(screen.getByTestId('category-text').props.children).toEqual('test');
   });
 
   it(`can have correct styling`, () => {
-    const { getByTestId } = renderWithProviders(
-      <Category testID="answer-item" text="test" isSelected />
-    );
-    expect(getByTestId('category-text').props.children).toEqual('test');
+    renderWithProviders(<Category testID="answer-item" text="test" isSelected />);
+    expect(screen.getByTestId('category-text').props.children).toEqual('test');
   });
 });

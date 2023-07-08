@@ -17,7 +17,7 @@ const QuestionFailedScreen = () => {
       dispatch(addScoreToLeaderboard(currentScore));
       dispatch(resetCurrentScore());
       dispatch(resetQuestionTracker());
-      replace('LeaderBoardScreen');
+      replace('LeaderboardScreen');
       return;
     }
     replace('QuestionScreen');

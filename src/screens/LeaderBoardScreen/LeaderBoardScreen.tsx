@@ -3,17 +3,19 @@ import { ComicText, LeaderboardItem, View } from '../../components';
 import { useReduxSelector } from '../../redux';
 import { useCallback } from 'react';
 
-const LeaderBoardScreen = () => {
+const LeaderboardScreen = () => {
   const { leaderboards } = useReduxSelector((s) => s.main);
 
   const renderItem = useCallback(({ item, index }: { item: number; index: number }) => {
-    return <LeaderboardItem text={`${index + 1}. ${item}`} />;
+    return (
+      <LeaderboardItem testID="leaderboard-item" text={`${index + 1}. ${item}`} score={item} />
+    );
   }, []);
 
   const renderEmpty = () => {
     return (
       <View style={styles.emptyContainer}>
-        <ComicText>No data. Please play one round first!</ComicText>
+        <ComicText testID="text-empty">No data. Please play one round first!</ComicText>
       </View>
     );
   };
@@ -35,7 +37,7 @@ const LeaderBoardScreen = () => {
   );
 };
 
-export default LeaderBoardScreen;
+export default LeaderboardScreen;
 
 const styles = StyleSheet.create({
   mainContainer: { flex: 1 },

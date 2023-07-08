@@ -47,7 +47,7 @@ const MainScreen = () => {
         <Button
           testID={`button-leaderboard`}
           style={styles.button}
-          onPress={() => navigate('LeaderBoardScreen')}>
+          onPress={() => navigate('LeaderboardScreen')}>
           <ComicText>Leaderboards</ComicText>
         </Button>
       </View>

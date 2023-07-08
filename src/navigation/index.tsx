@@ -13,10 +13,10 @@ import {
   QuestionFailedScreen,
   QuestionScreen,
   QuestionSuccessScreen,
+  LeaderboardScreen,
 } from '../screens';
 import { RootStackParamList } from './types';
 import LinkingConfiguration from './LinkingConfiguration';
-import LeaderBoardScreen from '../screens/LeaderBoardScreen/LeaderBoardScreen';
 
 const Navigation = ({ colorScheme }: { colorScheme: ColorSchemeName }) => {
   return (
@@ -51,9 +51,9 @@ const RootNavigator = () => {
         options={{ headerShown: false }}
       />
       <Stack.Screen
-        name="LeaderBoardScreen"
-        component={LeaderBoardScreen}
-        options={{ title: 'LeaderBoards' }}
+        name="LeaderboardScreen"
+        component={LeaderboardScreen}
+        options={{ title: 'Leaderboards' }}
       />
     </Stack.Navigator>
   );

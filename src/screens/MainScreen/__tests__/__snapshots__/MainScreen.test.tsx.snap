@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainScreen match snapshot 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    {
+      "flexGrow": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        [
+          {
+            "backgroundColor": "#fff",
+          },
+          {
+            "alignItems": "center",
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+            },
+            [
+              {
+                "fontSize": 30,
+                "marginVertical": "20%",
+              },
+              {
+                "fontFamily": "comic",
+              },
+            ],
+          ]
+        }
+      >
+        Words Puzzle
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+            },
+            [
+              undefined,
+              {
+                "fontFamily": "comic",
+              },
+            ],
+          ]
+        }
+      >
+        Please choose a theme 
+      </Text>
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#fff",
+            },
+            {
+              "height": "50%",
+              "justifyContent": "space-evenly",
+            },
+          ]
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "backgroundColor": "#fff",
+              "borderColor": "#000",
+              "borderRadius": 20,
+              "borderWidth": 1,
+              "opacity": 1,
+              "paddingHorizontal": "15%",
+              "paddingVertical": "5%",
+            }
+          }
+          testID="category-cities"
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#000",
+                },
+                [
+                  {
+                    "textAlign": "center",
+                  },
+                  {
+                    "fontFamily": "comic",
+                  },
+                ],
+              ]
+            }
+            testID="category-text"
+          >
+            cities
+          </Text>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "backgroundColor": "#fff",
+              "borderColor": "#000",
+              "borderRadius": 20,
+              "borderWidth": 1,
+              "opacity": 1,
+              "paddingHorizontal": "15%",
+              "paddingVertical": "5%",
+            }
+          }
+          testID="category-animals"
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#000",
+                },
+                [
+                  {
+                    "textAlign": "center",
+                  },
+                  {
+                    "fontFamily": "comic",
+                  },
+                ],
+              ]
+            }
+            testID="category-text"
+          >
+            animals
+          </Text>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "backgroundColor": "#fff",
+              "borderColor": "#000",
+              "borderRadius": 20,
+              "borderWidth": 1,
+              "opacity": 1,
+              "paddingHorizontal": "15%",
+              "paddingVertical": "5%",
+            }
+          }
+          testID="category-foods"
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#000",
+                },
+                [
+                  {
+                    "textAlign": "center",
+                  },
+                  {
+                    "fontFamily": "comic",
+                  },
+                ],
+              ]
+            }
+            testID="category-text"
+          >
+            foods
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#ccc",
+            "borderRadius": 20,
+            "marginBottom": 10,
+            "opacity": 1,
+            "paddingHorizontal": "15%",
+            "paddingVertical": "5%",
+            "width": "90%",
+          }
+        }
+        testID="button-continue"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              [
+                undefined,
+                {
+                  "fontFamily": "comic",
+                },
+              ],
+            ]
+          }
+        >
+          Start
+        </Text>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#686fcc",
+            "borderRadius": 20,
+            "marginBottom": 10,
+            "opacity": 1,
+            "paddingHorizontal": "15%",
+            "paddingVertical": "5%",
+            "width": "90%",
+          }
+        }
+        testID="button-leaderboard"
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              [
+                undefined,
+                {
+                  "fontFamily": "comic",
+                },
+              ],
+            ]
+          }
+        >
+          Leaderboards
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

@@ -13,7 +13,7 @@ declare global {
 
 export type RootStackParamList = {
   MainScreen: undefined;
-  LeaderBoardScreen: undefined;
+  LeaderboardScreen: undefined;
   QuestionScreen: undefined;
   QuestionSuccessScreen: { points: number };
   QuestionFailedScreen: undefined;

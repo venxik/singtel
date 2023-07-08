@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LeaderboardScreen match snapshot 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#fff",
+      },
+      {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListEmptyComponent={[Function]}
+    contentContainerStyle={
+      {
+        "flex": 1,
+        "paddingHorizontal": 20,
+      }
+    }
+    data={[]}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#fff",
+            },
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "#000",
+              },
+              [
+                undefined,
+                {
+                  "fontFamily": "comic",
+                },
+              ],
+            ]
+          }
+          testID="text-empty"
+        >
+          No data. Please play one round first!
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

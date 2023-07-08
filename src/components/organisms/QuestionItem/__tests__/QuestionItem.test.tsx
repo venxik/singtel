@@ -1,17 +1,17 @@
 import React from 'react';
 import { renderWithProviders } from '../../../../__mocks__';
-import { fireEvent } from '@testing-library/react-native';
+import { fireEvent, screen } from '@testing-library/react-native';
 import QuestionItem from '../QuestionItem';
 
 describe('QuestionItem', () => {
   it(`match snapshot`, () => {
-    const tree = renderWithProviders(<QuestionItem text="test" isSelected />).toJSON();
-    expect(tree).toMatchSnapshot();
+    renderWithProviders(<QuestionItem text="test" isSelected />);
+    expect(screen.toJSON()).toMatchSnapshot();
   });
 
   it(`can be pressed and functional`, () => {
     let number = 1;
-    const { getByTestId } = renderWithProviders(
+    renderWithProviders(
       <QuestionItem
         testID="question-item"
         text="test"
@@ -19,17 +19,17 @@ describe('QuestionItem', () => {
         isSelected={false}
       />
     );
-    fireEvent.press(getByTestId('question-item'));
+    fireEvent.press(screen.getByTestId('question-item'));
     expect(number).toBe(2);
   });
 
   it(`can have display text when isSelected false`, () => {
-    const { getByTestId } = renderWithProviders(<QuestionItem text="test" isSelected={false} />);
-    expect(getByTestId('question-item-text').props.children).toEqual('test');
+    renderWithProviders(<QuestionItem text="test" isSelected={false} />);
+    expect(screen.getByTestId('question-item-text').props.children).toEqual('test');
   });
 
   it(`doesn't display text when isSelected true`, () => {
-    const { getByTestId } = renderWithProviders(<QuestionItem text="test" isSelected={true} />);
-    expect(getByTestId('question-item-text').props.children).toEqual('');
+    renderWithProviders(<QuestionItem text="test" isSelected={true} />);
+    expect(screen.getByTestId('question-item-text').props.children).toEqual('');
   });
 });
