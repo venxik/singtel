@@ -19,6 +19,7 @@ yarn ios # -> for ios
 
 ## Structure
 
+```
 📦src
 ┣ 📂**mocks**
 ┃ ┣ 📜index.ts
@@ -150,6 +151,7 @@ yarn ios # -> for ios
 ┃ ┣ 📜index.ts
 ┃ ┣ 📜layout.ts
 ┃ ┗ 📜question.ts
+```
 
 I'm using what's called [atomic system design](https://atomicdesign.bradfrost.com/chapter-2/) to structure my component folder.
 For redux configuration I'm using [RTK](https://redux-toolkit.js.org/) to help me create store and reducer structure without too much boilerplate.
