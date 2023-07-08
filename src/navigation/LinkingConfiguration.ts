@@ -14,7 +14,8 @@ const linking: LinkingOptions<RootStackParamList> = {
   config: {
     screens: {
       MainScreen: 'main',
-      LeaderBoardScreen: 'leaderboard',
+      LeaderboardScreen: 'leaderboard',
+      QuestionScreen: 'question',
     },
   },
 };
