@@ -171,9 +171,9 @@ Basically the general steps are like:
 
 Steps for android:
 
-1. Generate private signin key in order to build apk/abb.
+1. Generate private signing key for our release build.
 2. Setting gradle variables with our needs.
-3. Add signing config to our gradle's configuration
+3. Add signing config to our gradle's configuration.
 4. run `npx react-native build-android --mode=release` to create abb files that google play store needs. We cannot use apk files anymore to submit to google play store.
 
 Steps for ios:
