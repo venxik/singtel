@@ -161,11 +161,11 @@ For unit testing I'm using some libraries to help me create tests easily such as
 
 ## :coffee: Release
 
-We need to signup to google play console account and apple developer program first in order to submit and upload our app.
+We need to signup to google play console account and apple developer program first in order to submit and upload our app. They will cost us money.
 
-For app that was build with expo like this project, we use [eas build tools](https://docs.expo.dev/eas/) because we cannot generate our apk/ipa files locally. It has a complete documentation in order for us to upload our app without having build locally on our machine.
+For app that was build with expo like this project, we use [eas build tools](https://docs.expo.dev/eas/) because we cannot generate our apk/ipa files locally. It has a complete documentation in order for us to upload and submit our app to playstore and appstore.
 
-For app that was build with react-native CLI, we can basically can refer to this [documentation for android](https://reactnative.dev/docs/signed-apk-android) and [documentation for ios](https://reactnative.dev/docs/publishing-to-app-store).
+For app that was build with react-native CLI, we can refer to this [documentation for android](https://reactnative.dev/docs/signed-apk-android) and [documentation for ios](https://reactnative.dev/docs/publishing-to-app-store).
 
 Basically the general steps are like:
 
