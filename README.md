@@ -159,6 +159,14 @@ For redux configuration I'm using [RTK](https://redux-toolkit.js.org/) to help m
 
 For unit testing I'm using some libraries to help me create tests easily such as [react-native-testing-library](https://callstack.github.io/react-native-testing-library/) and [jest-native](https://testing-library.com/docs/ecosystem-jest-native)
 
+To check unit tests you can run
+
+```javascript
+yarn test
+//or
+npm test
+```
+
 ## :coffee: Release
 
 We need to signup to google play console account and apple developer program first in order to submit and upload our app. They will cost us money.
