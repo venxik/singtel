@@ -17,7 +17,7 @@ yarn android # -> for android
 yarn ios # -> for ios
 ```
 
-## Structure
+## :evergreen_tree: Structure
 
 ```
 📦src
@@ -154,7 +154,32 @@ yarn ios # -> for ios
 ```
 
 I'm using what's called [atomic system design](https://atomicdesign.bradfrost.com/chapter-2/) to structure my component folder.
+
 For redux configuration I'm using [RTK](https://redux-toolkit.js.org/) to help me create store and reducer structure without too much boilerplate.
+
 For unit testing I'm using some libraries to help me create tests easily such as [react-native-testing-library](https://callstack.github.io/react-native-testing-library/) and [jest-native](https://testing-library.com/docs/ecosystem-jest-native)
 
-## Release
+## :coffee: Release
+
+We need to signup to google play console account and apple developer program first in order to submit and upload our app.
+
+For app that was build with expo like this project, we use [eas build tools](https://docs.expo.dev/eas/) because we cannot generate our apk/ipa files locally. It has a complete documentation in order for us to upload our app without having build locally on our machine.
+
+For app that was build with react-native CLI, we can basically can refer to this [documentation for android](https://reactnative.dev/docs/signed-apk-android) and [documentation for ios](https://reactnative.dev/docs/publishing-to-app-store).
+
+Basically the general steps are like:
+
+Steps for android:
+
+1. Generate private signin key in order to build apk/abb.
+2. Setting gradle variables with our needs.
+3. Add signing config to our gradle's configuration
+4. run `npx react-native build-android --mode=release` to create abb files that google play store needs. We cannot use apk files anymore to submit to google play store.
+
+Steps for ios:
+
+1. Enable App transport security to block http request that are not sent over https.
+2. Configure our project release scheme with our needs.
+3. Build our ios app from Xcode by selecting **Products -> Build** from menu bar.
+
+Or to make things easier we can use [fastlane](https://fastlane.tools/) by creating simple scripts for our app. It has various plugins to help us build and we can also utilize this tools on our CI/CD pipeline.
